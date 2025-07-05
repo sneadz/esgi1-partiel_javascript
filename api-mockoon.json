@@ -1,0 +1,234 @@
+{
+  "uuid": "f8b3acc5-383e-4b64-bb99-112cc0827881",
+  "lastMigration": 33,
+  "name": "anti-gaspi",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3004,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "4dfde23f-87e7-4ec3-b9dd-f595cdc9cf33",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "antigaspi",
+      "responses": [
+        {
+          "uuid": "e7ebc617-0118-4f08-a69f-bea95557eab5",
+          "body": "{\n  \"categories\": [\"entrées\", \"plats\", \"desserts\", \"boissons\"],\n  \"waste-count\": 7,\n  \"waste-receipes\": [\n    {\n      \"title\": \"Classic Margherita Pizza\",\n      \"description\": \"A traditional Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.\",\n      \"price\": 12.99,\n      \"shop\": \"Italian Delight\"\n    },\n    {\n      \"title\": \"Chocolate Chip Cookies\",\n      \"description\": \"Homemade cookies loaded with chocolate chips, perfect for any occasion.\",\n      \"price\": 5.99,\n      \"shop\": \"Sweet Treats Bakery\"\n    },\n    {\n      \"title\": \"Beef Burger with Fries\",\n      \"description\": \"Juicy beef patty served with crispy fries and a side of ketchup.\",\n      \"price\": 9.99,\n      \"shop\": \"Burger Haven\"\n    },\n    {\n      \"title\": \"Vegetable Stir Fry\",\n      \"description\": \"A healthy mix of fresh vegetables stir-fried in a savory sauce.\",\n      \"price\": 8.49,\n      \"shop\": \"Green Bites\"\n    },\n    {\n      \"title\": \"Chicken Caesar Salad\",\n      \"description\": \"Grilled chicken breast served on a bed of romaine lettuce with Caesar dressing.\",\n      \"price\": 10.99,\n      \"shop\": \"Salad Days\"\n    },\n    {\n      \"title\": \"Spaghetti Carbonara\",\n      \"description\": \"Classic Italian pasta dish with eggs, hard cheese, pancetta, and black pepper.\",\n      \"price\": 11.50,\n      \"shop\": \"Pasta Palace\"\n    },\n    {\n      \"title\": \"Apple Pie\",\n      \"description\": \"Delicious apple pie with a flaky crust and a scoop of vanilla ice cream.\",\n      \"price\": 7.99,\n      \"shop\": \"Pie in the Sky\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "8a990bbe-cd24-4d64-867d-860e798742ee",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "entr(?:ées|%C3%A9es)",
+      "responses": [
+        {
+          "uuid": "d8c1dcbf-ff2a-44d7-885e-3a014b0c8f0a",
+          "body": "[\n    {\n      \"title\": \"Bruschetta\",\n      \"description\": \"Toasted bread topped with tomatoes, garlic, fresh basil, and a drizzle of olive oil.\",\n      \"price\": 6.99,\n      \"shop\": \"Italian Delight\"\n    },\n    {\n      \"title\": \"Spinach and Artichoke Dip\",\n      \"description\": \"Creamy dip made with spinach, artichokes, and melted cheese, served with tortilla chips.\",\n      \"price\": 7.49,\n      \"shop\": \"Appetizer Heaven\"\n    },\n    {\n      \"title\": \"Stuffed Mushrooms\",\n      \"description\": \"Mushrooms filled with a mixture of cream cheese, garlic, and herbs, baked to perfection.\",\n      \"price\": 8.99,\n      \"shop\": \"Mushroom Magic\"\n    },\n    {\n      \"title\": \"Shrimp Cocktail\",\n      \"description\": \"Chilled shrimp served with a tangy cocktail sauce.\",\n      \"price\": 9.99,\n      \"shop\": \"Seafood Sensations\"\n    }\n  ]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "5706d885-726b-4b2d-b508-b6daa735e29d",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "plats",
+      "responses": [
+        {
+          "uuid": "533049c5-2ad7-4676-8d5c-0d648c919f4b",
+          "body": "[\n    {\n      \"title\": \"Grilled Salmon\",\n      \"description\": \"Fresh salmon fillet grilled to perfection, served with a side of steamed vegetables.\",\n      \"price\": 18.99,\n      \"shop\": \"Seafood Sensations\"\n    },\n    {\n      \"title\": \"Chicken Alfredo Pasta\",\n      \"description\": \"Fettuccine pasta with a creamy Alfredo sauce and grilled chicken breast.\",\n      \"price\": 14.99,\n      \"shop\": \"Pasta Palace\"\n    },\n    {\n      \"title\": \"Beef Tacos\",\n      \"description\": \"Soft tortillas filled with seasoned ground beef, lettuce, cheese, and salsa.\",\n      \"price\": 11.99,\n      \"shop\": \"Taco Fiesta\"\n    },\n    {\n      \"title\": \"Vegetable Curry\",\n      \"description\": \"A hearty mix of vegetables in a spicy curry sauce, served with basmati rice.\",\n      \"price\": 12.49,\n      \"shop\": \"Spice Haven\"\n    },\n    {\n      \"title\": \"Margherita Pizza\",\n      \"description\": \"Classic Italian pizza with tomato sauce, mozzarella cheese, and fresh basil.\",\n      \"price\": 12.99,\n      \"shop\": \"Italian Delight\"\n    },\n    {\n      \"title\": \"BBQ Ribs\",\n      \"description\": \"Tender pork ribs slow-cooked and glazed with barbecue sauce.\",\n      \"price\": 19.99,\n      \"shop\": \"BBQ Heaven\"\n    },\n    {\n      \"title\": \"Caesar Salad\",\n      \"description\": \"Romaine lettuce with Caesar dressing, croutons, and grilled chicken.\",\n      \"price\": 10.99,\n      \"shop\": \"Salad Days\"\n    },\n    {\n      \"title\": \"Shrimp Scampi\",\n      \"description\": \"Shrimp sautéed in garlic butter sauce, served over linguine pasta.\",\n      \"price\": 17.99,\n      \"shop\": \"Seafood Sensations\"\n    },\n    {\n      \"title\": \"Mushroom Risotto\",\n      \"description\": \"Creamy risotto made with Arborio rice, mushrooms, and Parmesan cheese.\",\n      \"price\": 13.49,\n      \"shop\": \"Italian Delight\"\n    },\n    {\n      \"title\": \"Beef Stir Fry\",\n      \"description\": \"Stir-fried beef with mixed vegetables in a savory sauce.\",\n      \"price\": 14.99,\n      \"shop\": \"Asian Wok\"\n    },\n    {\n      \"title\": \"Chicken Parmesan\",\n      \"description\": \"Breaded chicken breast topped with marinara sauce and melted mozzarella cheese.\",\n      \"price\": 15.99,\n      \"shop\": \"Italian Delight\"\n    },\n    {\n      \"title\": \"Vegetable Lasagna\",\n      \"description\": \"Layers of pasta, ricotta cheese, and mixed vegetables baked to perfection.\",\n      \"price\": 13.99,\n      \"shop\": \"Pasta Palace\"\n    },\n    {\n      \"title\": \"Pork Chops\",\n      \"description\": \"Grilled pork chops served with mashed potatoes and green beans.\",\n      \"price\": 16.99,\n      \"shop\": \"Meat Lovers\"\n    },\n    {\n      \"title\": \"Chicken Caesar Wrap\",\n      \"description\": \"Grilled chicken, romaine lettuce, and Caesar dressing wrapped in a tortilla.\",\n      \"price\": 9.99,\n      \"shop\": \"Wrap It Up\"\n    },\n    {\n      \"title\": \"Beef Bourguignon\",\n      \"description\": \"Classic French stew made with beef, red wine, and vegetables.\",\n      \"price\": 18.99,\n      \"shop\": \"French Bistro\"\n    },\n    {\n      \"title\": \"Grilled Vegetable Platter\",\n      \"description\": \"Assorted grilled vegetables served with a balsamic glaze.\",\n      \"price\": 11.49,\n      \"shop\": \"Green Bites\"\n    },\n    {\n      \"title\": \"Chicken and Vegetable Stir Fry\",\n      \"description\": \"Stir-fried chicken with mixed vegetables in a savory sauce.\",\n      \"price\": 13.99,\n      \"shop\": \"Asian Wok\"\n    }\n  ]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c115476b-14dc-4913-8e10-13e6735ba4c8",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "desserts",
+      "responses": [
+        {
+          "uuid": "ecd0d943-c702-44e1-9118-25ffed0f48ff",
+          "body": "[\n    {\n      \"title\": \"Chocolate Lava Cake\",\n      \"description\": \"Warm chocolate cake with a molten center, served with vanilla ice cream.\",\n      \"price\": 8.99,\n      \"shop\": \"Sweet Tooth\"\n    },\n    {\n      \"title\": \"New York Cheesecake\",\n      \"description\": \"Classic cheesecake with a graham cracker crust and a creamy filling.\",\n      \"price\": 7.49,\n      \"shop\": \"Cheesecake Factory\"\n    },\n    {\n      \"title\": \"Apple Pie\",\n      \"description\": \"Homemade apple pie with a flaky crust and a scoop of vanilla ice cream.\",\n      \"price\": 6.99,\n      \"shop\": \"Pie in the Sky\"\n    },\n    {\n      \"title\": \"Tiramisu\",\n      \"description\": \"Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cheese.\",\n      \"price\": 9.49,\n      \"shop\": \"Italian Delight\"\n    },\n    {\n      \"title\": \"Strawberry Shortcake\",\n      \"description\": \"Light sponge cake layered with fresh strawberries and whipped cream.\",\n      \"price\": 7.99,\n      \"shop\": \"Berry Bliss\"\n    },\n    {\n      \"title\": \"Chocolate Chip Cookies\",\n      \"description\": \"Classic cookies loaded with chocolate chips, perfect for any occasion.\",\n      \"price\": 4.99,\n      \"shop\": \"Cookie Jar\"\n    },\n    {\n      \"title\": \"Crème Brûlée\",\n      \"description\": \"Rich custard topped with a layer of caramelized sugar.\",\n      \"price\": 8.49,\n      \"shop\": \"French Patisserie\"\n    }\n  ]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c5f5d1e3-2888-4fce-842c-47c02675a2fd",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "boissons",
+      "responses": [
+        {
+          "uuid": "9a645331-dde9-4f73-8c5a-5a0abd01c9a8",
+          "body": "[\n    {\n      \"title\": \"Classic Mojito\",\n      \"description\": \"A refreshing cocktail made with white rum, sugar, lime juice, soda water, and mint.\",\n      \"price\": 7.99,\n      \"shop\": \"Tropical Bar\"\n    },\n    {\n      \"title\": \"Strawberry Smoothie\",\n      \"description\": \"A creamy blend of strawberries, bananas, yogurt, and a splash of milk.\",\n      \"price\": 5.49,\n      \"shop\": \"Smoothie King\"\n    },\n    {\n      \"title\": \"Iced Caramel Macchiato\",\n      \"description\": \"Espresso with milk and caramel syrup, served over ice.\",\n      \"price\": 4.99,\n      \"shop\": \"Coffee House\"\n    },\n    {\n      \"title\": \"Virgin Piña Colada\",\n      \"description\": \"A non-alcoholic blend of pineapple juice, coconut cream, and ice.\",\n      \"price\": 6.49,\n      \"shop\": \"Beachside Café\"\n    },\n    {\n      \"title\": \"Hot Chocolate\",\n      \"description\": \"Rich and creamy hot chocolate topped with whipped cream and marshmallows.\",\n      \"price\": 3.99,\n      \"shop\": \"Cocoa Corner\"\n    },\n    {\n      \"title\": \"Green Tea Latte\",\n      \"description\": \"A soothing latte made with matcha green tea and steamed milk.\",\n      \"price\": 4.49,\n      \"shop\": \"Tea Garden\"\n    },\n    {\n      \"title\": \"Blueberry Lemonade\",\n      \"description\": \"A tangy and sweet lemonade infused with fresh blueberries.\",\n      \"price\": 4.99,\n      \"shop\": \"Lemonade Stand\"\n    },\n    {\n      \"title\": \"Espresso Martini\",\n      \"description\": \"A sophisticated cocktail made with vodka, espresso, and coffee liqueur.\",\n      \"price\": 8.99,\n      \"shop\": \"Cocktail Lounge\"\n    }\n  ]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4dfde23f-87e7-4ec3-b9dd-f595cdc9cf33"
+    },
+    {
+      "type": "route",
+      "uuid": "8a990bbe-cd24-4d64-867d-860e798742ee"
+    },
+    {
+      "type": "route",
+      "uuid": "5706d885-726b-4b2d-b508-b6daa735e29d"
+    },
+    {
+      "type": "route",
+      "uuid": "c115476b-14dc-4913-8e10-13e6735ba4c8"
+    },
+    {
+      "type": "route",
+      "uuid": "c5f5d1e3-2888-4fce-842c-47c02675a2fd"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
